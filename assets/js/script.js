@@ -109,9 +109,9 @@ function displayForecast(forecastData) {
     var windEl = document.createElement('p');
     var humidEl = document.createElement('p');
 
-    var tempData = (forecastData.list[0].main.temp - 273.15) * 9 / 5 + 32;
+    var tempData = (forecastData.list[0].main.temp - 273.15);
     console.log(tempData);
-    tempEl.innerHTML = 'Temp: ' + tempData.toFixed(2) + '°F';
+    tempEl.innerHTML = 'Temp: ' + tempData.toFixed(2) + '°C';
     forecastContainerEl.appendChild(tempEl);
     console.log(tempEl);
 
@@ -158,8 +158,8 @@ function displayFiveDays(forecastData) {
         var windEl = document.createElement('p');
         var humidEl = document.createElement('p');
 
-        var tempData = (forecastData.list[i * 8].main.temp - 273.15) * 9 / 5 + 32;
-        tempEl.innerHTML = 'Temp: ' + tempData.toFixed(2) + '°F';
+        var tempData = (forecastData.list[i * 8].main.temp - 273.15);
+        tempEl.innerHTML = 'Temp: ' + tempData.toFixed(2) + '°C';
         forecastDayCards.appendChild(tempEl);
 
         var windData = forecastData.list[i * 8].wind.speed;
