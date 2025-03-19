@@ -5,7 +5,7 @@ import time
 import threading
 
 # OpenWeatherMap API Key & Cities
-API_KEY = "7b14d7e72c74972a1fd018a743f99901"
+API_KEY = ""
 CITIES = ["Johannesburg", "Cape Town", "Durban"]
 
 # Kafka Configuration
