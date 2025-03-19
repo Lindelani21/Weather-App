@@ -4,7 +4,7 @@ var forecastContainerEl = document.getElementById('forecast-container');
 var forecastCardEl = document.getElementById('forecast-cards');
 var cityButtons = document.getElementById('city-buttons');
 var subtitle = document.getElementById('subtitle');
-var apiKey = '010f510da36ea60a956c7518452bbcb1';
+var apiKey = '';
 
 //Function for event handler (submit button) to retrieve user input (city data)
 function formSubmitHandler(event) {
