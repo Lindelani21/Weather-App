@@ -31,7 +31,7 @@ def fetch_and_send_weather(city):
             print(f"Sent weather data for {city} to Kafka topic {KAFKA_TOPIC}")
         elif response.status_code == 401:
             print(f"ERROR 401: Unauthorized request for {city}. Check API key.")
-            break  # Stop thread if API key is incorrect
+            break  # Stop thread if API key is incorrect or no longer valid
         else:
             print(f"Failed to fetch data for {city}: {response.status_code}")
 
